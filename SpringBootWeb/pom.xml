@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>HelloSpringBoot</artifactId>
+    <artifactId>SpringBootWeb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>HelloSpringBoot</name>
-    <description>HelloSpringBoot</description>
+    <name>SpringBootWeb</name>
+    <description>SpringBootWeb</description>
     <url/>
     <licenses>
         <license/>
@@ -48,7 +48,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.25</version>
+        </dependency>
+
     </dependencies>
 
     <build>

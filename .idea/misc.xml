@@ -6,7 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/HelloSpringBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/HelloSpringBoot/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="26" project-jdk-type="JavaSDK">
