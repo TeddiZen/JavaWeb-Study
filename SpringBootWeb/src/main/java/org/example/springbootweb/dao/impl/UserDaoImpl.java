@@ -13,6 +13,7 @@ import org.example.springbootweb.dao.UserDao;
 @Repository
 public class UserDaoImpl implements UserDao {
 
+    // 从文件中取数据
     @Override
     public List<String> getUserList() {
         InputStream in = getClass().getClassLoader().getResourceAsStream("static/data.txt");
