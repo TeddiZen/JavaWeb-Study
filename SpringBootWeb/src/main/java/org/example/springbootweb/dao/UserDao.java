@@ -1,4 +1,4 @@
-package org.example.springbootweb.Dao.impl;
+package org.example.springbootweb.dao;
 
 import java.util.List;
 

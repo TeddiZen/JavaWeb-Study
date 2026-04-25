@@ -1,4 +1,4 @@
-package org.example.springbootweb.Pojo;
+package org.example.springbootweb.pojo;
 
 import lombok.Data;
 

@@ -1,17 +1,25 @@
-package org.example.springbootweb.Controller.impl;
+package org.example.springbootweb.service.impl;
 
-import org.example.springbootweb.Controller.UserController;
-import org.example.springbootweb.Dao.impl.UserDao;
-import org.example.springbootweb.Dao.impl.UserDaoImpl;
-import org.example.springbootweb.Pojo.User;
+import org.example.springbootweb.pojo.User;
+import org.example.springbootweb.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.example.springbootweb.dao.UserDao;
 
-import java.util.ArrayList;
+
+
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class UserControllerImpl implements UserController {
+@Service
+public class UserServiceImpl implements UserService {
 
-    private UserDao userDao = new UserDaoImpl();
+    private final UserDao userDao;
+
+    @Autowired
+    public UserServiceImpl(UserDao userDao){
+        this.userDao = userDao;
+    }
 
     @Override
     public List<User> userList() {
